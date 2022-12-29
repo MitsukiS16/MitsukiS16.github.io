@@ -1,5 +1,11 @@
 # MitsukiS16
 
+## About me
+
+- 3th Year Informatics and Computing Engineering Student, FEUP [https://sigarra.up.pt/feup/pt/web_page.inicial]
+- Guitar, TUNAFE [https://paginas.fe.up.pt/~tunafe/WP/]
+- Black Belt, Judo [http://www.fpj.pt]
+
 ## Goal
 
 Room Porfolio with Three.js
