@@ -19,7 +19,9 @@ Room Porfolio with Three.js
 - JS
 - GSAP timeline and scrolltrigger
 - Node.js
-- etc
+- Vercel
+- Asscroll
+- Vite.js
 
 ## Inspiration
 
