@@ -1,5 +1,5 @@
 header {
   height: 120vh;
   width: 100%;
-  background-image: linear-gradient(red, black);
+  background-image: linear-gradient(red 0%, black 100%);
 }

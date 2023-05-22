@@ -1,19 +1,12 @@
-.navbar {
-  background-color: orange;
-}
-
-/* 
-
-.navbar {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-left: auto;
-}
-
 .navdiv {
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: 1rem;
+  width: fit-content;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  height: 3rem;
 }
 
 li > a {
@@ -27,7 +20,7 @@ li > a {
 li::after {
   content: "";
   width: 0rem;
-  height: 0.15rem;
+  height: 0.1rem;
   background-color: white;
   display: block;
   border-radius: 0.2rem;
@@ -37,4 +30,4 @@ li::after {
 
 li:hover::after {
   width: 2rem;
-} */
+}
