@@ -1,12 +1,13 @@
 import Header from "./components/Header/Header";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div>
       <Header />
-      <Body />
+      <section className="common-section blue"></section>
+      <section className="common-section yellow"></section>
+      <section className="common-section orange"></section>
       <Footer />
     </div>
   );
