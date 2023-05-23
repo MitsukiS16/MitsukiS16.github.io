@@ -121,3 +121,16 @@ svg {
     stroke-dashoffset: 0;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  svg {
+    width: 100%;
+    /* height: 300px; */
+  }
+  .animation-container {
+    font-size: 150%;
+  }
+  .others-letter {
+    max-width: max-content;
+  }
+}

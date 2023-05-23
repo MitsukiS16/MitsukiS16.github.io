@@ -42,4 +42,8 @@
   .about-text {
     width: auto;
   }
+
+  .about-me img {
+    width: 100%;
+  }
 }
