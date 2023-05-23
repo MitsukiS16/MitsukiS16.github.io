@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Aboutme from "./components/Aboutme/Aboutme";
+import CountStuff from "./components/CountStuff/CountStuff";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <div>
       <Header />
       <Aboutme />
-      <section className="common-section yellow"></section>
+      <CountStuff />
       <section className="common-section orange"></section>
       <Footer />
     </div>

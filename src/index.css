@@ -36,13 +36,8 @@ section {
   width: 100%;
 }
 
-.yellow {
-  background-color: yellow;
-  height: 500px;
-}
-
 .orange {
-  background-color: orange;
+  background-color: beige;
   height: 500px;
 }
 
@@ -68,5 +63,20 @@ h5 {
   }
   h5 {
     font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 40px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
   }
 }
