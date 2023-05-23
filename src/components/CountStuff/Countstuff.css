@@ -19,10 +19,10 @@
   font-weight: bold;
 }
 
-.count-assets,
 .count-code-lines,
 .count-work-hours,
-.count-coffees {
+.count-coffees,
+.count-serie-hours {
   padding-top: 3%;
   padding-bottom: 3%;
   text-align: center;
