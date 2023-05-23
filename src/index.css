@@ -30,17 +30,6 @@ li {
   letter-spacing: 1px;
 }
 
-/* test code below */
-
-section {
-  width: 100%;
-}
-
-.white {
-  background-color: white;
-  height: 500px;
-}
-
 h2 {
   font-size: 75px;
   text-transform: capitalize;
