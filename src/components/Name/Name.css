@@ -5,6 +5,7 @@
   height: 100vh;
   padding-top: 40vh;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .main-letter,
@@ -41,7 +42,7 @@
   }
   100% {
     opacity: 1;
-    width: 300px; /*importante*/
+    width: 320px; /*importante*/
   }
 }
 
