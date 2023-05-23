@@ -1,0 +1,29 @@
+.main-count-stuff {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  letter-spacing: 1px;
+}
+
+.main-count-stuff img {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  width: 20%;
+}
+
+.main-count-stuff span {
+  font-weight: bold;
+}
+
+.count-assets,
+.count-code-lines,
+.count-work-hours,
+.count-coffees {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
