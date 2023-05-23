@@ -1,23 +1,24 @@
 .about-me {
   width: 100%;
-  background-color: white;
-  margin: 150px 0 100px 0;
+  background-color: #131313;
+  padding: 100px 0 100px 0;
+  color: white;
 }
 
 .about-text {
   width: 500px;
-  color: black;
 }
 
 .about-me img {
   height: auto;
-  width: 300px;
+  width: 200px;
+  border-radius: 100px;
 }
 
 .main-about-me {
   width: 90%;
   max-width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,7 +29,6 @@
 }
 
 .about-text p {
-  color: black;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;

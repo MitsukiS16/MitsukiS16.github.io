@@ -8,7 +8,7 @@ const Aboutme = () => {
       <h2>About me</h2>
       <div class="main-about-me">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/1924px-Person_icon_BLACK-01.svg.png"
+          src="https://media.licdn.com/dms/image/D4D03AQHdTSzEHO5PWQ/profile-displayphoto-shrink_200_200/0/1684400804162?e=1690416000&v=beta&t=DxaMZSmhpvyPnYfVB0alk_3sgv16cIZrJ9NH5ew9ipQ"
           alt="Clarisse Carvalho"
         />
         <div class="about-text">

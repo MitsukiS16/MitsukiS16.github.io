@@ -8,8 +8,9 @@ function App() {
     <div>
       <Header />
       <Aboutme />
+      <section className="common-section white"></section>
       <CountStuff />
-      <section className="common-section orange"></section>
+      <section className="common-section white"></section>
       <Footer />
     </div>
   );
