@@ -1,11 +1,12 @@
 import Header from "./components/Header/Header";
+import Aboutme from "./components/Aboutme/Aboutme";
 import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div>
       <Header />
-      <section className="common-section blue"></section>
+      <Aboutme />
       <section className="common-section yellow"></section>
       <section className="common-section orange"></section>
       <Footer />

@@ -24,6 +24,7 @@ ul {
 li {
   list-style: none;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 /* test code below */
@@ -33,18 +34,26 @@ section {
   height: 500px;
 }
 
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
 .yellow {
   background-color: yellow;
 }
 
 .orange {
   background-color: orange;
+}
+
+h2 {
+  color: black;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h5 {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
 }
