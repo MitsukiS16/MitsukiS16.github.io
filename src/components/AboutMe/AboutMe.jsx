@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Aboutme.css";
+import "./AboutMe.css";
 
-const Aboutme = () => {
+const AboutMe = () => {
   return (
     <section class="about-me">
       <h2>About me</h2>
@@ -27,4 +27,4 @@ const Aboutme = () => {
   );
 };
 
-export default Aboutme;
+export default AboutMe;
