@@ -1,7 +1,7 @@
 .about-me {
   width: 100%;
   background-color: white;
-  margin-top: 50px;
+  margin: 50px 0 50px 0;
 }
 
 .about-text {
@@ -32,4 +32,14 @@
   line-height: 28px;
   font-size: 18px;
   /* margin-bottom: 45px; */
+}
+
+@media only screen and (max-width: 700px) {
+  .main-about-me {
+    display: block;
+    text-align: center;
+  }
+  .about-text {
+    width: auto;
+  }
 }

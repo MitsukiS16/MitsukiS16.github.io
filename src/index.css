@@ -31,15 +31,16 @@ li {
 
 section {
   width: 100%;
-  height: 500px;
 }
 
 .yellow {
   background-color: yellow;
+  height: 500px;
 }
 
 .orange {
   background-color: orange;
+  height: 500px;
 }
 
 h2 {
