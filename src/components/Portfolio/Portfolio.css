@@ -1,0 +1,23 @@
+.portfolio {
+  background-color: white;
+}
+
+.main-portfolio {
+  padding: 2%;
+}
+.project {
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  margin: 2%;
+  top: 50%;
+  text-align: left;
+}
+
+.project p {
+  padding: 2%;
+}
+
+.project p:hover {
+  background-color: lightgray;
+  border-radius: 0.5rem;
+}

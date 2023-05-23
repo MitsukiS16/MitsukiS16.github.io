@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
-import MyWork from "./components/MyWork/MyWork";
+import Portfolio from "./components/Portfolio/Portfolio";
 import CountStuff from "./components/CountStuff/CountStuff";
 import MyLife from "./components/MyLife/MyLife";
 import Footer from "./components/Footer/Footer";
@@ -10,9 +10,11 @@ function App() {
     <div>
       <Header />
       <AboutMe />
-      <MyWork />
+      <Portfolio />
       <CountStuff />
-      <MyLife />
+      <MyLife cooltext="ola">
+        <p>i am a child</p>
+      </MyLife>
       <Footer />
     </div>
   );

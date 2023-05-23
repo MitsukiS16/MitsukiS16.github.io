@@ -16,10 +16,11 @@ const AboutMe = () => {
             Developer <span>& Designer</span>
           </h5>
           <p>
-            I am a passionate person with a strong interest in software
-            development. I have experience with a variety of programming
-            languages and technologies, including Java, C/C++, and C#. I'm
-            always looking for ways to improve my skills and knowledge.
+            I am a <strong>passionate</strong> person with a strong interest in
+            software development. I have experience with a
+            <strong> variety</strong> of programming languages and technologies,
+            including Java, C/C++, and C#. I'm always looking for ways to
+            <strong> improve</strong> my skills and knowledge.
           </p>
         </div>
       </div>
