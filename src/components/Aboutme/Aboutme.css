@@ -1,0 +1,35 @@
+.about-me {
+  width: 100%;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.about-text {
+  width: 500px;
+}
+
+.about-me img {
+  height: auto;
+  width: 300px;
+}
+
+.main-about-me {
+  width: 90%;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text span {
+  color: red;
+}
+
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  /* margin-bottom: 45px; */
+}
