@@ -2,15 +2,28 @@ import React from "react";
 
 import "./MyLife.css";
 
-const MyLife = (props) => {
-  console.log(props.cooltext);
+const MyLife = () => {
   return (
-    <section class="about about-my-life">
+    <section className="about my-life">
       <h2>My Life</h2>
-      <div class="main-about-my-life">
-        <p>olaa</p>
+      <div className="main-my-life">
+        <div className="specific-stuff">
+          <div className="div-stuff div-stuff-1">
+            <h5>ola</h5>
+          </div>
+          <div className="div-stuff div-stuff-2">
+            <h5>ola</h5>
+          </div>
+          <div className="div-stuff div-stuff-3">
+            <h5>ola</h5>
+          </div>
+          <div className="div-stuff div-stuff-4">
+            <h5>ola</h5>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
 export default MyLife;

@@ -3,9 +3,9 @@ import "./Name.css";
 const Name = () => {
   return (
     <>
-      <div class="animation-container">
-        <div class="main-letter">C</div>
-        <div class="others-letter">
+      <div className="animation-container">
+        <div className="main-letter">C</div>
+        <div className="others-letter">
           <span>larisse Carvalho</span>
         </div>
       </div>
@@ -14,9 +14,9 @@ const Name = () => {
           <g
             id="Page-1"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
             fill="none"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           >
             <g id="Artboard" transform="translate(-9.000000, -7.000000)">
               <g id="Group-2" transform="translate(9.000000, 7.000000)">
@@ -32,32 +32,32 @@ const Name = () => {
                 <g
                   id="Group"
                   transform="translate(4.000000, 3.500000)"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 >
                   <polyline
-                    class="path"
+                    className="path"
                     id="x0"
                     stroke="#fff"
                     points="32 2 32 2.5"
                   ></polyline>
 
                   <path
-                    class="path"
+                    className="path"
                     d="M32,0.5 C33.1045695,0.5 34,1.3954305 34,2.5 L34,4.5 C34,5.6045695 33.1045695,6.5 32,6.5 C30.8954305,6.5 30,5.6045695 30,4.5 L30,2.5 C30,1.3954305 30.8954305,0.5 32,0.5 Z "
                     id="x1"
                     stroke="#fff"
                   ></path>
 
                   <path
-                    class="path"
+                    className="path"
                     d="M31,8.5 L32,9.5    M32,9.5 L33,8.5"
                     id="x1"
                     stroke="#fff"
                   ></path>
                   <path
-                    class="path"
+                    className="path"
                     d="M31,11 L32,12      M32,12 L33,11"
                     id="x2"
                     stroke="#fff"

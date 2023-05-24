@@ -46,20 +46,20 @@ const Portfolio = () => {
   };
 
   return (
-    <section class="about portfolio">
+    <section className="about portfolio">
       <h2>Portfolio</h2>
-      <div class="main-portfolio">
+      <div className="main-portfolio">
         {counts.map((item) => (
           <div
-            class="specific-project"
+            className="specific-project"
             key={item.title}
             onClick={() => openLink(item.link)}
           >
-            <div class="specific-project-main">
-              <div class="specific-project-date">
+            <div className="specific-project-main">
+              <div className="specific-project-date">
                 <p>{item.date}</p>
               </div>
-              <div class="specific-project-title">
+              <div className="specific-project-title">
                 <h5>{item.title}</h5>
               </div>
             </div>

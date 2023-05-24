@@ -2,9 +2,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar">
-      <div class="navdiv">
-        <ul class="navbar-ul">
+    <nav className="navbar">
+      <div className="navdiv">
+        <ul className="navbar-ul">
           <li>
             <a href="#">Home</a>
           </li>

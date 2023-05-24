@@ -1,3 +1,40 @@
-.about-my-life {
+/* Styles for the "My Life" section */
+.about.my-life {
   background-color: white;
+}
+
+.main-my-life {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Styles for the "specific-stuff" div */
+.specific-stuff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+/* Styles for the individual "div-stuff" divs */
+.div-stuff {
+  border: 2px solid var(--second-color);
+  border-radius: 0.5rem;
+  background-color: var(--main-color-dark);
+  height: 350px;
+  width: 350px;
+}
+
+.div-stuff h5 {
+  text-align: center;
+  margin: 2%;
+  color: white;
+  background-color: red;
+}
+
+.div-stuff:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color-dark);
 }

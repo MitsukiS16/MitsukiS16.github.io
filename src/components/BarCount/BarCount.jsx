@@ -27,9 +27,9 @@ const BarCount = () => {
   ];
 
   return (
-    <div class="main-count-stuff">
+    <div className="main-count-stuff">
       {counts.map((item) => (
-        <div class="count-stuff">
+        <div className="count-stuff">
           <img src={item.img}></img>
           <p>
             {item.count}
