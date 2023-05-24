@@ -21,6 +21,7 @@
   );
   border: 2px solid var(--main-color-dark);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .specific-project-main {
