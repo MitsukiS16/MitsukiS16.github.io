@@ -3,6 +3,7 @@
 :root {
   --main-color: red;
   --main-color-dark: rgb(195, 0, 0);
+  --main-color-light: rgb(255, 195, 195);
   --second-color: black;
 }
 
@@ -39,7 +40,8 @@ li {
 h2 {
   font-size: 75px;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 
