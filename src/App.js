@@ -12,9 +12,7 @@ function App() {
       <AboutMe />
       <Portfolio />
       <BarCount />
-      <MyLife cooltext="ola">
-        <p>i am a child</p>
-      </MyLife>
+      <MyLife />
       <Footer />
     </div>
   );
