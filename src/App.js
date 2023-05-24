@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Portfolio from "./components/Portfolio/Portfolio";
-import CountStuff from "./components/CountStuff/CountStuff";
+import BarCount from "./components/BarCount/BarCount";
 import MyLife from "./components/MyLife/MyLife";
 import Footer from "./components/Footer/Footer";
 
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <AboutMe />
       <Portfolio />
-      <CountStuff />
+      <BarCount />
       <MyLife cooltext="ola">
         <p>i am a child</p>
       </MyLife>
