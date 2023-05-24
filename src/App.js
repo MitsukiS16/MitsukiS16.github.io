@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Portfolio from "./components/Portfolio/Portfolio";
-import BarCount from "./components/BarCount/BarCount";
+import BarCount from "./components/CountStuff/BarCount";
 import MyLife from "./components/MyLife/MyLife";
 import Footer from "./components/Footer/Footer";
 

@@ -14,7 +14,11 @@
 }
 
 .specific-project:hover {
-  background-color: var(--main-color-light);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgb(195, 0, 0, 1) 100%
+  );
   border: 2px solid var(--main-color-dark);
   border-radius: 0.5rem;
 }
@@ -64,10 +68,6 @@
   border-radius: 1rem;
   background-color: white;
   text-transform: capitalize;
-}
-
-.first-project .specific-project-main:hover {
-  background-color: orange;
 }
 
 /* .specific-project-tags p {
