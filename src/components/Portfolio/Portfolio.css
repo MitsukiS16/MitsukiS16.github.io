@@ -6,18 +6,23 @@
   padding: 2%;
 }
 .project {
-  border: 1px solid red;
+  border: 1px solid var(--second-color);
   border-radius: 0.5rem;
   margin: 2%;
   top: 50%;
   text-align: left;
 }
 
-.project p {
+.project h5 {
   padding: 2%;
 }
 
-.project p:hover {
+.project h5:hover {
   background-color: lightgray;
   border-radius: 0.5rem;
+}
+
+.project span {
+  padding-right: 2%;
+  font-size: small;
 }

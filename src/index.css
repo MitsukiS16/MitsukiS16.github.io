@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --main-color: rgb(195, 0, 0);
+  --main-color: red;
+  --main-color-dark: rgb(195, 0, 0);
+  --second-color: black;
 }
 
 body {
@@ -44,7 +46,6 @@ h2 {
 h5 {
   letter-spacing: 2px;
   font-size: 22px;
-  margin-bottom: 25px;
   text-transform: capitalize;
   text-transform: uppercase;
 }

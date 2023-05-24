@@ -1,6 +1,10 @@
 header {
   height: 110vh;
   width: 100%;
-  background: radial-gradient(circle at 50% 0%, red 10%, black 70%) 0 0;
-  /* background: radial-gradient(ellipse at top, red, black 70%); */
+  background: radial-gradient(
+      circle at 50% 0%,
+      var(--main-color-dark) 10%,
+      var(--second-color) 70%
+    )
+    0 0;
 }
