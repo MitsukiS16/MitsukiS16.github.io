@@ -1,0 +1,44 @@
+{
+    "jornal-jun-23": {
+      "date": "2021",
+      "title": "Web scraping - Yugioh",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["python"]
+    },
+    "jornal-jul-23": {
+      "date": "2022",
+      "title": "Website clube judo 82",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["javaScript", "css", "html"]
+    },
+    "jornal-agu-23": {
+      "date": "2022",
+      "title": "Game borberman",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["java", "gradle"]
+    },
+    "jornal-sep-23": {
+      "date": "2022",
+      "title": "App S.U.P - Calculator",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["flutter", "dart", "html", "ruby"]
+    },
+    "jornal-out-23": {
+      "date": "2023",
+      "title": "game questionnarie",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["c#", "ShaderLab"]
+    },
+    "jornal-nov-23": {
+      "date": "2023",
+      "title": "Website ticket system",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["php", "css", "javaScript"]
+    },
+    "jornal-dez-23": {
+      "date": "2023",
+      "title": "Website ticket system",
+      "link": "https://github.com/MitsukiS16",
+      "tags": ["php", "css", "javaScript"]
+    }
+}
