@@ -9,7 +9,7 @@ const MyLife = () => {
       <div className="main-my-life">
         <div className="specific-stuff">
           <div className="div-stuff div-stuff-1">
-            <h5>Statics</h5>
+            <h5>Stats</h5>
           </div>
           <div className="div-stuff div-stuff-2">
             <h5>Travel</h5>
