@@ -1,46 +1,9 @@
 import React from "react";
+import counts from "../../assets/db/portfolio.json";
 
 import "./Portfolio.css";
 
 const Portfolio = () => {
-  const counts = [
-    {
-      date: "2021",
-      title: "Web scraping - Yugioh",
-      link: "https://github.com/MitsukiS16",
-      tags: ["python"],
-    },
-    {
-      date: "2022",
-      title: "Website clube judo 82",
-      link: "https://github.com/MitsukiS16",
-      tags: ["javaScript", "css", "html"],
-    },
-    {
-      date: "2022",
-      title: "Game borberman",
-      link: "https://github.com/MitsukiS16",
-      tags: ["java", "gradle"],
-    },
-    {
-      date: "2022",
-      title: "App S.U.P - Calculator",
-      link: "https://github.com/MitsukiS16",
-      tags: ["flutter", "dart", "html", "ruby"],
-    },
-    {
-      date: "2023",
-      title: "game questionnarie",
-      link: "https://github.com/MitsukiS16",
-      tags: ["c#", "ShaderLab"],
-    },
-    {
-      date: "2023",
-      title: "Website ticket system",
-      link: "https://github.com/MitsukiS16",
-      tags: ["php", "css", "javaScript"],
-    },
-  ];
   const openLink = (link) => {
     window.open(link, "_blank");
   };
