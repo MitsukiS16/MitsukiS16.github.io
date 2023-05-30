@@ -9,31 +9,47 @@ const Particle = () => {
     await loadFull(main);
   };
 
+  const particlesLoaded = (container) => {
+    console.log(container);
+    const particlesContainer = container.querySelector(
+      ".particles-js-canvas-el"
+    );
+    particlesContainer.style.maxHeight = "120vh";
+  };
+
   const particlesOptions = {
     fullScreen: {
-      enable: false,
-      // zIndex: 1,
+      enable: true,
+      zIndex: -1,
     },
     particles: {
       number: {
-        value: 10,
+        value: 50,
         density: {
-          enable: false,
-          value_area: 50,
+          enable: true,
+          value_area: 500, //???
         },
       },
       color: {
-        value: "#fff",
+        value: "#ffffff",
       },
       shape: {
         type: "circle",
-        // options: {
-        //   sides: 5,
-        // },
-        options: {},
+        stroke: {
+          width: 0,
+          color: "#000000",
+        },
+        polygon: {
+          nb_sides: 5,
+        },
+        image: {
+          src: "img/github.svg",
+          width: 100,
+          height: 100,
+        },
       },
       opacity: {
-        value: 0.8,
+        value: 0.5,
         random: false,
         anim: {
           enable: false,
@@ -43,8 +59,8 @@ const Particle = () => {
         },
       },
       size: {
-        value: 4,
-        random: false,
+        value: 3,
+        random: true,
         anim: {
           enable: false,
           speed: 40,
@@ -52,30 +68,21 @@ const Particle = () => {
           sync: false,
         },
       },
-      rotate: {
-        value: 0,
-        random: true,
-        direction: "clockwise",
-        animation: {
-          enable: true,
-          speed: 5,
-          sync: false,
-        },
-      },
       line_linked: {
         enable: true,
-        distance: 600,
+        distance: 150,
         color: "#ffffff",
         opacity: 0.4,
-        width: 2,
+        width: 1,
       },
       move: {
         enable: true,
-        speed: 2, // IMP
+        speed: 2,
         direction: "none",
         random: false,
         straight: false,
         out_mode: "out",
+        bounce: false,
         attract: {
           enable: false,
           rotateX: 600,
@@ -84,20 +91,17 @@ const Particle = () => {
       },
     },
     interactivity: {
+      detect_on: "canvas",
       events: {
         onhover: {
           enable: true,
-          mode: ["grab"],
-        },
-        onclick: {
-          enable: false,
-          mode: "bubble",
+          mode: "repulse", //grab or repulse
         },
         resize: true,
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 140,
           line_linked: {
             opacity: 1,
           },
@@ -111,6 +115,7 @@ const Particle = () => {
         },
         repulse: {
           distance: 200,
+          duration: 0.4,
         },
         push: {
           particles_nb: 4,
@@ -123,35 +128,15 @@ const Particle = () => {
     retina_detect: true,
     background: {
       color: "#111",
-      image: "",
-      position: "",
-      repeat: "",
-      size: "",
-      opacity: 0,
+      height: "120vh",
     },
-    emitters: [
-      {
-        direction: "top",
-        rate: {
-          delay: 2,
-          quantity: 1,
-        },
-        size: {
-          width: 200, // Set the width to 100 pixels
-          height: 0,
-        },
-        position: {
-          x: 50, // Set the x position to 50 (center of the page)
-          y: 0,
-        },
-      },
-    ],
   };
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
+      Loaded={particlesLoaded}
       options={particlesOptions}
     />
   );
