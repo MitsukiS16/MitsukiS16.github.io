@@ -1,11 +1,11 @@
 .main-count-stuff {
-  background-color: var(--second-color);
+  background-color: var(--main-color-dark);
   display: flex;
   justify-content: center;
   padding-left: 1%;
   padding-right: 1%;
   letter-spacing: 1px;
-  color: white;
+  /* color:var(--second-color); */
 }
 
 .main-count-stuff img {
@@ -14,17 +14,18 @@
   margin-right: auto;
   margin-bottom: 0.5rem;
   width: 20%;
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 .main-count-stuff p {
-  color: var(--main-color);
+  color: white;
+  
   line-height: 28px;
 }
 
 .main-count-stuff span {
   font-weight: bold;
-  color: white;
+  color: var(--second-color);
 }
 
 .count-stuff {

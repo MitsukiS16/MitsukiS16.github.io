@@ -127,7 +127,8 @@ const Particle = () => {
     },
     retina_detect: true,
     background: {
-      color: "#111",
+      image: "linear-gradient(to bottom, #ff0000, #000)",
+      // image: "radial-gradient(#e66465, #9198e5)",
       height: "120vh",
     },
   };

@@ -1,4 +1,4 @@
-/* header {
+header {
   height: 110vh;
   width: 100%;
   /* background: radial-gradient(
@@ -6,9 +6,9 @@
       var(--main-color-dark) 10%,
       var(--second-color) 70%
     )
-    0 0;
+    0 0; */
   position: relative;
-} */
+}
 
 header {
   height: 110vh;
