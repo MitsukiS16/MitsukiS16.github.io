@@ -4,13 +4,10 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <section className="about about-me">
+    <>
       <h2>About me</h2>
       <div className="main-about-me">
-        <img
-          src="https://media.licdn.com/dms/image/D4D03AQHdTSzEHO5PWQ/profile-displayphoto-shrink_200_200/0/1684400804162?e=1690416000&v=beta&t=DxaMZSmhpvyPnYfVB0alk_3sgv16cIZrJ9NH5ew9ipQ"
-          alt="Clarisse Carvalho"
-        />
+        <img src="sissi.png" alt="Clarisse Carvalho" />
         <div className="about-text">
           <h5>
             Developer <span>& Designer</span>
@@ -24,7 +21,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

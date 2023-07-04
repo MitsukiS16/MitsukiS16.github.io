@@ -9,7 +9,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="about portfolio">
+    <>
       <h2>Portfolio</h2>
       <div className="main-portfolio">
         {counts.map((item) => (
@@ -36,7 +36,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 };
 

@@ -7,11 +7,11 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
+    <>
       <Particle />
       <Navbar />
       <Name />
-    </header>
+    </>
   );
 };
 

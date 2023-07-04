@@ -14,7 +14,7 @@ const Particle = () => {
     const particlesContainer = container.querySelector(
       ".particles-js-canvas-el"
     );
-    particlesContainer.style.maxHeight = "120vh";
+    particlesContainer.style.maxHeight = "100vh";
   };
 
   const particlesOptions = {
@@ -129,7 +129,7 @@ const Particle = () => {
     background: {
       image: "linear-gradient(to bottom, #ff0000, #000)",
       // image: "radial-gradient(#e66465, #9198e5)",
-      height: "120vh",
+      height: "100vh",
     },
   };
 

@@ -6,9 +6,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <>
       <Contacts />
-    </footer>
+    </>
   );
 };
 

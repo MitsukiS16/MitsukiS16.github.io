@@ -14,7 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 50px;
+  padding: 0px;
+  padding-top: 20px;
   gap: 30px;
 }
 
@@ -22,8 +23,8 @@
 .div-stuff {
   border: 2px solid var(--second-color);
   border-radius: 0.5rem;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
 }
 
 .div-stuff h5 {
@@ -41,7 +42,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://cdn-icons-png.flaticon.com/512/2103/2103708.png);
   background-position: center;
-  background-size: 350px;
+  background-size: 300px;
   background-repeat: no-repeat;
 }
 
@@ -49,7 +50,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://cdn-icons-png.flaticon.com/512/5219/5219574.png);
   background-position: center;
-  background-size: 350px;
+  background-size: 300px;
   background-repeat: no-repeat;
 }
 
@@ -57,7 +58,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://cdn-icons-png.flaticon.com/512/2126/2126344.png);
   background-position: center;
-  background-size: 350px;
+  background-size: 300px;
   background-repeat: no-repeat;
 }
 
@@ -65,7 +66,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://cdn-icons-png.flaticon.com/512/2643/2643483.png);
   background-position: center;
-  background-size: 350px;
+  background-size: 300px;
   background-repeat: no-repeat;
 }
 
