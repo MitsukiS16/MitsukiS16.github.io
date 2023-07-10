@@ -25,7 +25,12 @@ const BarCount = () => {
     },
   ];
 
-  const [animatedCounts, setAnimatedCounts] = useState([]);
+  const [animatedCounts, setAnimatedCounts] = useState(
+    counts.map((item) => ({
+      ...item,
+      animatedCount: 0,
+    }))
+  );
   const duration = 3000; // Total duration for the animation in milliseconds
   const containerRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
@@ -104,7 +109,7 @@ const BarCount = () => {
           <img src={item.img} alt={item.title} />
           <p>
             {item.animatedCount}
-            <br />
+            <br/>
             <span>{item.title}</span>
           </p>
         </div>

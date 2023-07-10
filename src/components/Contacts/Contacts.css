@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .main-contacts p {
@@ -27,4 +28,13 @@
 .main-contacts span {
   color: var(--main-color);
   font-size: small;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-contacts h5 {
+    font-size: smaller;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
 }
