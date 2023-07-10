@@ -7,18 +7,31 @@ const AboutMe = () => {
     <>
       <h2>About me</h2>
       <div className="main-about-me">
-        <img src="sissi.png" alt="Clarisse Carvalho" />
+        <img src="./Trollface.png" alt="Clarisse Carvalho" />
         <div className="about-text">
           <h5>
             Developer <span>& Designer</span>
           </h5>
           <p>
-            I am a <strong>passionate</strong> person with a strong interest in
-            software development. I have experience with a
-            <strong> variety</strong> of programming languages and technologies,
-            including Java, C/C++, and C#. I'm always looking for ways to
-            <strong> improve</strong> my skills and knowledge.
+            I am a passionate software developer from Porto, Portugal. I have
+            experience in various programming languages like Java, C/C++, and
+            HTML/CSS. My goal is to constantly improve my skills and expand my
+            knowledge in this field.
           </p>
+          <br />
+          <p>
+            As a UI Designer and FullStack Developer, I find great joy in
+            creating code that is not only elegant but also efficient. It brings
+            me a sense of accomplishment and satisfaction when I can produce
+            clean and well-designed solutions that not only look visually
+            appealing but also provide seamless functionality.
+          </p>
+          <br />
+          <p>
+            When I'm not coding or designing, I enjoy practicing judo or
+            painting.
+          </p>
+          <p></p>
         </div>
       </div>
     </>

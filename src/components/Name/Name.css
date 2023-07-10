@@ -1,7 +1,7 @@
 .animation-container {
   color: white;
   font-weight: 500;
-  font-size: 38px;
+  font-size: 70px;
   height: 100vh;
   padding-top: 40vh;
   text-align: center;
@@ -42,7 +42,7 @@
   }
   100% {
     opacity: 1;
-    width: 320px; /*importante*/
+    width: 570px; /*importante*/
   }
 }
 
@@ -64,7 +64,7 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 800px;
+  width: 100px;
   height: 100px;
   transform: translate(-50%, -50%);
 }
@@ -122,12 +122,21 @@ svg {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px) {
+  .animation-container {
+    font-size: 300%;
+  }
+  .others-letter {
+    max-width: max-content;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   svg {
     width: 100%;
   }
   .animation-container {
-    font-size: 120%;
+    font-size: 150%;
   }
   .others-letter {
     max-width: max-content;
