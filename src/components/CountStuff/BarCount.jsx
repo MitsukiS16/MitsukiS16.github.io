@@ -109,7 +109,8 @@ const BarCount = () => {
           <img src={item.img} alt={item.title} />
           <p>
             {item.animatedCount}
-            <br/>
+            <br />
+            <br />
             <span>{item.title}</span>
           </p>
         </div>
