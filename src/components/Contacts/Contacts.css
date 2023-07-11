@@ -17,12 +17,19 @@
 .main-contacts h5 {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .main-contacts h5 span {
   color: red;
-  font-size: small;
-  padding-right: 20px;
+  /* font-size: small; */
+  padding-bottom: 5px;
+}
+
+.main-contacts h5 br {
+  display: none;
 }
 
 .main-contacts span {
@@ -30,11 +37,13 @@
   font-size: small;
 }
 
-@media only screen and (max-width: 500px) {
-  .main-contacts h5 {
-    font-size: smaller;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-  }
+.main-contacts img {
+  color: red;
+  width: 30px;
+  margin-bottom: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(12%) sepia(84%) saturate(6915%) hue-rotate(359deg)
+    brightness(103%) contrast(108%);
 }
