@@ -13,6 +13,11 @@
   border-radius: 0.5rem;
   margin: 1.5%;
   display: flex;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 35%,
+    rgb(255, 192, 192) 100%
+  );
 }
 
 .specific-project:hover {
@@ -36,7 +41,6 @@
   padding-top: 1.5%;
   display: flex;
   width: 100%;
-
   /* white-space: nowrap; */
 }
 
@@ -79,3 +83,26 @@
 /* .specific-project-tags p {
   border: 1px solid var(--main-color-dark);
 } */
+
+@media (max-width: 700px) {
+  .specific-project-main {
+    justify-content: center;
+  }
+
+  .specific-project-tags {
+    display: none;
+  }
+
+  .specific-project-date {
+    display: none;
+  }
+  .specific-project-title {
+    width: auto; /* Allow the title to wrap based on content */
+  }
+  .specific-project {
+    border: 2px solid var(--second-color);
+    border-radius: 0.5rem;
+    margin: 5%;
+    padding: 2%;
+  }
+}
