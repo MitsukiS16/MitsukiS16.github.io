@@ -13,18 +13,19 @@ const AboutMe = () => {
             Developer <span>& Designer</span>
           </h5>
           <p>
-            I am a passionate software developer from Porto, Portugal. I have
-            experience in various programming languages like Java, C/C++, and
-            HTML/CSS. My goal is to constantly improve my skills and expand my
-            knowledge in this field.
+            I am a <span>passionate</span> software developer from Porto,
+            Portugal. I have experience in various programming languages like
+            Java, C/C++, and HTML/CSS. My goal is to constantly improve my
+            skills and expand my knowledge in this field.
           </p>
           <br />
           <p>
             As a UI Designer and FullStack Developer, I find great joy in
-            creating code that is not only elegant but also efficient. It brings
-            me a sense of accomplishment and satisfaction when I can produce
-            clean and well-designed solutions that not only look visually
-            appealing but also provide seamless functionality.
+            creating code that is not only elegant but also{" "}
+            <span>efficient</span>. It brings me a sense of accomplishment and
+            satisfaction when I can produce clean and well-designed solutions
+            that not only look visually appealing but also provide seamless
+            functionality.
           </p>
           <br />
           <p>
