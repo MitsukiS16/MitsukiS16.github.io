@@ -2,9 +2,9 @@ import React from "react";
 
 import "./AboutMe.css";
 
-const AboutMe = () => {
+const AboutMe = ({ aboutMeRef }) => {
   return (
-    <>
+    <div ref={aboutMeRef}>
       <h2>About me</h2>
       <div className="main-about-me">
         <img src="./Trollface.png" alt="Clarisse Carvalho" />
@@ -35,7 +35,7 @@ const AboutMe = () => {
           <p></p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

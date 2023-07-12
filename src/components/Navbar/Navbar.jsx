@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -6,16 +7,16 @@ const Navbar = () => {
       <div className="navdiv">
         <ul className="navbar-ul">
           <li>
-            <a href="#about-me">About Me</a>
+            <a>About Me</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a>Portfolio</a>
           </li>
           <li>
-            <a href="#my-life">My Life</a>
+            <a>My Life</a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a>Contacts</a>
           </li>
         </ul>
       </div>

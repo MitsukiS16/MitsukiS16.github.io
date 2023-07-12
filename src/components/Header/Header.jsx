@@ -5,11 +5,11 @@ import Particle from "./Particle";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <Particle />
-      <Navbar />
+      {/* <Navbar /> */}
       <Name />
     </>
   );
