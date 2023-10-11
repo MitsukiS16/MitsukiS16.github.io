@@ -1,0 +1,4 @@
+footer {
+  background: var(--second-color);
+  border-top: 5px solid var(--main-color);
+}

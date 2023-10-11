@@ -1,0 +1,66 @@
+.navdiv {
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: 0.9rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 3rem;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 15px;
+}
+
+li::after {
+  content: "";
+  width: 0rem;
+  height: 0.1rem;
+  background-color: white;
+  display: block;
+  border-radius: 0.2rem;
+  margin: 0.2rem auto 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    text-align: center;
+  }
+  .navdiv {
+    height: fit-content;
+    padding-top: 5%;
+  }
+  li {
+    width: 150px;
+  }
+  li > a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    text-align: center;
+  }
+  .navdiv {
+    height: fit-content;
+    padding-top: 5%;
+  }
+  li {
+    width: 150px;
+  }
+  li > a {
+    font-size: 0.9rem;
+  }
+}

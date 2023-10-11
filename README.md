@@ -1,4 +1,4 @@
-<h2 align="left">Languages and Tools:</h2>
+<h2 align="left">About me</h2>
 
 3th Year Informatics and Computing Engineering Student, FEUP [https://sigarra.up.pt/feup/pt/web_page.inicial]
 
@@ -20,4 +20,3 @@ APP Uni Feature, Dart [https://github.com/LEIC-ES-2021-22/2LEIC05T3]
 Webscrapping, Python [https://github.com/MitsukiS16/WebScrapingWithPython]
 
 Website Club Judo, React [https://github.com/MitsukiS16/clubejudo82]
-
