@@ -1,0 +1,14 @@
+.log/
+.node_modules/
+export/
+
+
+*.exe
+*.test
+
+.tmp
+
+.vscode/
+.history/
+
+
