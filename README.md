@@ -8,4 +8,7 @@ Duration: 1h
 
 ## Language + Frameworks
 
-HTLM + CSS + JS
+- HTML
+- CSS
+- JS
+- Tailwind
