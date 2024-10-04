@@ -7,46 +7,185 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a class="active" href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I am a passionate web developer with a knack for creating
-          beautiful and functional websites.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Project One</h3>
-          <p>
-            Description of the first project. This is where you highlight what
-            you did and the technologies used.
-          </p>
+      <div class="sidebar">
+        <div class="sidebar-info">
+          <img
+            src="https://thispersondoesnotexist.com/"
+            alt="avatar"
+            class="avatar-box"
+          />
+          <div class="info-content">
+            <h1 class="name">Clarisse Maria</h1>
+            <p class="title">CyberSecurity Engineer</p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Project Two</h3>
-          <p>
-            Description of the second project. Explain the challenges faced and
-            how you solved them.
-          </p>
+        <div class="separator"></div>
+        <div class="sidebar-info-more">
+          <nav>
+            <ul>
+              <li><a class="active" href="#about">About</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#teaching">Teaching</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
+      </div>
+      <div class="sections">
+        <section id="about" class="about-text">
+          <h2 class="h2 article-title">About Me</h2>
+          <p>
+            Hi, I'm Clarisse Maria, a 23-year-old Network and Security Engineer.
+          </p>
+          <p>
+            I'm currently pursuing a Master's Degree at the Faculty of Sciences,
+            University of Porto (FCUP).
+          </p>
+          <p>
+            My dream is to make information freely accessible to everyone, at
+            any time and from anywhere.
+          </p>
+        </section>
+
+        <section id="resume">
+          <h2 class="h2 article-title">Resume</h2>
+          <section class="timeline">
+            <h3>Education</h3>
+            <div>
+              <h4>Faculty of Sciences of the University of Porto</h4>
+              <p>2024-Present</p>
+              <p>
+                Master's Degree in Network and Information Systems Engineering
+              </p>
+            </div>
+            <div>
+              <h4>Faculty of Engineering of the University of Porto</h4>
+              <p>2021-2024</p>
+              <p>Bachelor's Degree in Informatics and Computing Engineering</p>
+            </div>
+          </section>
+          <section class="timeline">
+            <h3>Experience</h3>
+            <div>
+              <h4>Research</h4>
+              <p>10/2024-Present</p>
+              <p>descricao</p>
+            </div>
+            <div>
+              <h4>Associate Monitor</h4>
+              <p>Jul 2024</p>
+              <p>Associate monitor of the summer course 3D Object Modeling.</p>
+            </div>
+            <div>
+              <h4>IT Suport</h4>
+              <p>2023</p>
+              <p>
+                Contributed to website improvement efforts, including optimizing
+                code and creating new features.
+              </p>
+            </div>
+          </section>
+          <section class="skill">
+            <div>
+              <h3>Programming Languages</h3>
+              <ul class="skills-list content-card">
+                <li class="skills-item"><a>Java</a></li>
+                <li class="skills-item"><a>C/C++</a></li>
+                <li class="skills-item"><a>Python</a></li>
+                <li class="skills-item"><a>Bash</a></li>
+                <li class="skills-item"><a>Html/Css</a></li>
+                <li class="skills-item"><a>JavaScript</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <ul class="skills-list content-card">
+                <li class="skills-item"><a>Fortify</a></li>
+                <li class="skills-item"><a>SOP</a></li>
+                <li class="skills-item"><a>Cryptography</a></li>
+                <li class="skills-item"><a>Git/Github</a></li>
+                <li class="skills-item"><a>Windows/Linux</a></li>
+                <li class="skills-item"><a>Microsoft Office</a></li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="projects">
+          <h2 class="h2 article-title">Projects</h2>
+          <div class="project">
+            <h3>PROJECT SEG REDES<h3>
+            <p>...</p>
+            <a href="...">Project Repository</a>
+          </div>
+          <div class="project">
+            <h3>Socket-Calculator-Client-Server</h3>
+            <p>...</p>
+            <a href="...">Project Repository</a>
+          </div>
+          <div class="project">
+            <h3>Evasive PDF Samples</h3>
+            <p>
+              A machine learning model that detects whether PDF files are
+              malicious or safe.
+            </p>
+            <a href="https://github.com/MitsukiS16/IART_PROJ2_T6G2"
+              >Project Repository</a
+            >
+          </div>
+        </section>
+        <section id="teaching">
+          <h2 class="h2 article-title">Teaching</h2>
+          <p>olaaa</p>
+        </section>
+        <section id="contact">
+          <h2 class="h2 article-title">Contact</h2>
+          <p>olaaa</p>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <p>&copy; 2024 My Portfolio</p>
-    </footer>
+    <script>
+      // Function to remove 'active' class from all nav links
+      function removeActiveClasses() {
+        const navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach((link) => link.classList.remove("active"));
+      }
+
+      // Function to add 'active' class to the link corresponding to the current section
+      function setActiveLink() {
+        const sections = document.querySelectorAll("section");
+        const scrollPosition = window.scrollY + 200; // Offset for better visibility
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            removeActiveClasses();
+            const currentId = section.getAttribute("id");
+            const newActiveLink = document.querySelector(
+              `nav a[href="#${currentId}"]`
+            );
+            newActiveLink.classList.add("active");
+          }
+        });
+      }
+
+      // Event listener for scrolling
+      window.addEventListener("scroll", setActiveLink);
+
+      // Event listener for click on nav links
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", function () {
+          removeActiveClasses();
+          this.classList.add("active"); // Add active class to clicked link
+        });
+      });
+    </script>
   </body>
 </html>

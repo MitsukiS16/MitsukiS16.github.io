@@ -1,48 +1,108 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox for the overall layout */
-  flex-direction: column; /* Stack children vertically */
-  height: 100vh; /* Full height of the viewport */
 }
 
-header {
+body {
+  font-family: Arial, sans-serif;
+  display: flex; /* Use flexbox for the layout */
   background-color: #333;
   color: white;
-  text-align: center;
-  width: 100%; /* Ensure header spans full width */
-}
-
-header h1 {
-  margin: 0;
-  padding: 1em 0;
-}
-
-nav {
-  width: 200px; /* Fixed width for the sidebar */
-  background-color: #f1f1f1;
-  position: fixed; /* Fixed position for the sidebar */
-  height: 100%; /* Full height of the viewport */
-  overflow: auto; /* Add scrollbar if needed */
 }
 
 main {
-  flex-grow: 1; /* Allow main to take up the remaining space */
-  margin-left: 200px; /* Offset for the sidebar */
-  margin-top: 1em; /* Add margin-top to avoid overlap with the header */
-  padding: 2em;
-  background-color: #ffffff; /* Optional: set a background color */
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex; /* Use flexbox for main layout */
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  margin: 15px 12px;
+  min-width: 259px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav .active {
-  background-color: #04aa6d;
-  color: white;
-}
+/***********/
 
-nav a:hover:not(.active) {
+.sidebar {
+  position: sticky;
+  max-height: max-content;
+  margin-bottom: 0;
+  padding: 30px;
+  padding-top: 60px;
+
+  height: 100%;
+  width: auto;
+
+  overflow: hidden;
+
   background-color: #555;
-  color: white;
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.sections {
+  padding: 2em; /* Padding para as seções */
+  width: 60%; /* Ajuste a largura conforme necessário */
+  background-color: #555;
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sidebar-info {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-content .title {
+  margin: auto;
+}
+
+.info-content .name {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.name {
+  margin-top: 1em;
+  margin-bottom: 15px;
+}
+
+.avatar-box {
+  width: 200px; /* Set the width of the image to 150 pixels */
+  border-radius: 2em;
+}
+
+.title {
+  border: 8px;
+  padding: 5px 18px 5px 18px;
+  background-color: grey;
+  width: 210px;
+  border-radius: 0.5em;
+}
+
+/***********/
+
+.separator {
+  margin: 32px 0;
+  height: 1px;
+}
+
+/***********/
+
+nav {
+  margin-top: 1em;
 }
 
 nav ul {
@@ -51,35 +111,50 @@ nav ul {
 }
 
 nav ul li {
-  display: block; /* Change to block for better layout */
   margin: 0; /* No margin between links */
 }
 
 nav ul li a {
   display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
+  color: white; /* Default text color for links */
+  padding: 16px; /* Padding for the links */
+  text-decoration: none; /* No underline for links */
+  border-radius: 1em;
+}
+
+nav .active {
+  color: lightseagreen; /* Text color for active link */
+}
+
+nav a:hover:not(.active) {
+  background-color: #555; /* Darker background for hovered links */
+  color: white; /* Text color for hovered links */
 }
 
 section {
   padding: 2em;
-  max-width: 800px; /* Limit the width of content sections */
   margin: auto; /* Center align sections */
+  margin-bottom: 1em; /* Margin below sections */
 }
 
-.project {
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
+/******************/
+.article-title {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  width: 100%; /* Ensure footer spans full width */
-  position: relative; /* Change to relative for proper layout */
-  bottom: 0; /* Keep footer at the bottom */
+.article-title::after {
+  width: 40px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  background-color: lightseagreen;
+}
+
+.about-text p {
+  margin-bottom: 15px;
 }
