@@ -3,26 +3,69 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: Arial, sans-serif;
   display: flex; /* Use flexbox for the layout */
   background-color: #333;
   color: white;
+  min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 main {
   max-width: 1200px;
-  margin-inline: auto;
+  width: 100%; /* Allow main to take full width */
   display: flex; /* Use flexbox for main layout */
   justify-content: center;
   align-items: stretch;
   gap: 25px;
-  margin: 15px 12px;
-  min-width: 259px;
-  padding: 0;
+  padding: 15px 12px; /* Padding for main */
   box-sizing: border-box;
 }
+
+/***********/
+
+
+.timeline {
+  flex: 1; /* Allow sections to grow */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  );
+    border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding for sections */
+  margin-bottom: 10px; /* Space between sections */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.timeline:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.timeline div {
+  position: relative; /* Para permitir o posicionamento do pseudo-elemento */
+  padding-left: 25px; /* Espaço para o dot */
+}
+
+.timeline div::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Posição do dot à esquerda do texto */
+  top: 10px; /* Ajuste vertical para centralizar o dot */
+  width: 10px; /* Largura do dot */
+  height: 10px; /* Altura do dot */
+  border-radius: 50%; /* Para tornar o dot redondo */
+  background-color: lightseagreen; /* Cor do dot */
+}
+
+/* Opcional: Adiciona um efeito ao passar o mouse */
+.timeline div:hover::before {
+  background-color: #2e8b57; /* Cor mais escura ao passar o mouse */
+}
+
 
 /***********/
 
@@ -30,11 +73,11 @@ main {
   position: sticky;
   max-height: max-content;
   margin-bottom: 0;
-  padding: 30px;
-  padding-top: 60px;
+  padding: 1.875em;
 
   height: 100%;
   width: auto;
+  min-width: 300px;
 
   overflow: hidden;
 
@@ -45,8 +88,7 @@ main {
 }
 
 .sections {
-  padding: 2em; /* Padding para as seções */
-  width: 60%; /* Ajuste a largura conforme necessário */
+  padding: 1em; /* Padding para as seções */
   background-color: #555;
   border: 1px solid grey;
   border-radius: 20px;
@@ -55,6 +97,20 @@ main {
 
 h1 {
   text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px; /* Space below section titles */
+  color: lightseagreen; /* Use a distinct color for section titles */
+}
+
+h4 {
+  margin-top: 15px; /* Space above subsection titles */
+  font-size: 1.2em; /* Slightly larger font size */
+}
+
+p {
+  margin-bottom: 0.5em;
 }
 
 .sidebar-info {
@@ -82,12 +138,13 @@ h1 {
 .avatar-box {
   width: 200px; /* Set the width of the image to 150 pixels */
   border-radius: 2em;
+  padding: 1em;
 }
 
 .title {
   border: 8px;
   padding: 5px 18px 5px 18px;
-  background-color: grey;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 210px;
   border-radius: 0.5em;
 }
@@ -108,6 +165,7 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+  min-width: 100px;
 }
 
 nav ul li {
@@ -120,6 +178,7 @@ nav ul li a {
   padding: 16px; /* Padding for the links */
   text-decoration: none; /* No underline for links */
   border-radius: 1em;
+  min-width: 275px; /* Set minimum width */
 }
 
 nav .active {
@@ -132,9 +191,8 @@ nav a:hover:not(.active) {
 }
 
 section {
-  padding: 2em;
-  margin: auto; /* Center align sections */
-  margin-bottom: 1em; /* Margin below sections */
+  padding: 1.75em;
+  padding-bottom: 1em;
 }
 
 /******************/
@@ -155,6 +213,132 @@ section {
   background-color: lightseagreen;
 }
 
-.about-text p {
+/* .about-text p {
   margin-bottom: 15px;
+} */
+
+/****************/
+/*** Blockquote ***/
+
+blockquote {
+  margin: 20px 0; /* Espaço acima e abaixo do bloco */
+  padding: 15px; /* Padding dentro do bloco */
+  border-left: 4px solid lightseagreen; /* Borda esquerda para ênfase */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo ligeiramente transparente */
+  border-radius: 10px; /* Cantos arredondados */
+  font-style: italic; /* Texto em itálico */
+  color: #e0e0e0; /* Cor clara para o texto */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+blockquote:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo mais clara ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+blockquote p {
+  margin: 0 !important; /* Remove a margem padrão do parágrafo */
+}
+
+
+/*** Projects ***/
+
+.project {
+  flex: 1 1 calc(33.33% - 20px); /* 3 items per row with gap */
+  margin-bottom: 40px;
+  text-align: center;
+  min-width: 250px; /* Set a minimum width */
+}
+
+.projects-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+  justify-content: space-between; /* Space between projects */
+  gap: 20px; /* Adjust space between items */
+}
+
+.project h4 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: lightseagreen; /* Background color for the links */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.project a:hover {
+  background-color: #2e8b57; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.project-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-image-container:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent dark overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+}
+
+.project-image-container:hover .project-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-overlay p {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.project-overlay a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: lightseagreen; /* Button background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-overlay a:hover {
+  background-color: #2e8b57; /* Darker background on hover */
+  transform: translateY(-2px);
 }
