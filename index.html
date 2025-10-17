@@ -1,118 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarisse Carvalho | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarisse Carvalho | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Clarisse Carvalho {</h1>
-    <p class="subtitle">// Software Engineer</p>
-    <p class="subtitle">// @SissiMaria01</p>
+    <div class="floating-elements" id="floatingElements"></div>
+    
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="./sissi.png" alt="Clarisse Carvalho">
+                </div>
+                <h1>Clarisse Carvalho</h1>
+                <!-- <p class="tagline">Cybersecurity Specialist • Game Developer • Educator • Photographer</p> -->
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/SissiMaria01" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/clarissemaria" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-steam"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fas fa-gamepad"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </header>
+        
+        <div class="sections">
+            <div class="section security">
+                <div>
+                    <div class="section-icon">🔐</div>
+                    <h2>Security</h2>
+                    <p>I love exploring how systems work and finding ways to keep them safe.</p>
+                </div>
+                <button class="section-btn" onclick="location.href='security/index.html'">Explore My Work</button>
+            </div>
+            
+            <div class="section games">
+                <div>
+                    <div class="section-icon">🎮</div>
+                    <h2>Games</h2>
+                    <p>I enjoy creating games that tell stories and bring ideas to life.</p>
+                </div>
+                <button class="section-btn" onclick="location.href='game/index.html'">See My Games</button>
+            </div>
+            
+            <div class="section teaching">
+                <div>
+                    <div class="section-icon">👩‍🏫</div>
+                    <h2>Teaching</h2>
+                    <p>Sharing knowledge and helping others learn inspires me every day.</p>
+                </div>
+                <button class="section-btn" onclick="location.href='teaching/index.html'">Learn More</button>
+            </div>
+            
+            <div class="section photography">
+                <div>
+                    <div class="section-icon">📸</div>
+                    <h2>Photography</h2>
+                    <p>I capture moments that show the beauty of life and nature.</p>
+                </div>
+                <button class="section-btn" onclick="location.href='photography/index.html'">View Gallery</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Clarisse Carvalho. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <section>
-      <h2>Summary {</h2>
-      <p>
-        Network and Security student turning complex systems into secure, high-impact solutions.
-        Experienced in threat analysis, distributed computing, and building technologies that protect
-        and empower organizations.
-      </p>
-      }
-    </section>
+    <script>
+        // Create floating elements
+        const floatingContainer = document.getElementById('floatingElements');
+        const colors = ['rgba(108, 99, 255, 0.1)', 'rgba(255, 101, 132, 0.1)', 'rgba(86, 171, 47, 0.1)', 'rgba(142, 68, 173, 0.1)'];
+        
+        for (let i = 0; i < 15; i++) {
+            const element = document.createElement('div');
+            element.classList.add('floating-element');
+            
+            const size = Math.random() * 100 + 50;
+            element.style.width = `${size}px`;
+            element.style.height = `${size}px`;
+            element.style.background = colors[Math.floor(Math.random() * colors.length)];
+            element.style.top = `${Math.random() * 100}%`;
+            element.style.left = `${Math.random() * 100}%`;
+            element.style.animationDuration = `${Math.random() * 20 + 10}s`;
+            element.style.animationDelay = `${Math.random() * 5}s`;
+            
+            floatingContainer.appendChild(element);
+        }
 
-    <section>
-      <h2>Education {</h2>
-
-     <div class="job">
-        <p><strong>M.Sc. in Computer Science</strong> (2025) {</p>
-        <ul>
-          <li>Université Paris-Saclay;</li>
-          <li>Advanced Algorithms, Distributed Systems, Interactive Systems;</li>
-        </ul>
-        <p>}</p>
-      </div>
-
-      <div class="job">
-        <p><strong>Integrated B.Sc./M.Sc. in Computer Science</strong> (2021 -- 2026) {</p>
-        <ul>
-          <li>University of Porto;</li>
-          <li>Software Engineering, Network Systems, Security, Machine Learning;</li>
-        </ul>
-        <p>}</p>
-      </div>
-     }
-    </section>
-
-    <section>
-      <h2>Work Experience {</h2>
-
-      <div class="job">
-        <p><strong>Software Developer at Craftable Software</strong> (Feb 2025 -- Jun 2025) {</p>
-        <ul>
-          <li>Developed and maintained .NET/C# services using PostgreSQL and MongoDB.</li>
-          <li>Enhanced Percursus app UX by implementing AI-driven features.</li>
-        </ul>
-        <p>}</p>
-      </div>
-
-      <div class="job">
-        <p><strong>IT Support at EuPago</strong> (Jul 2023 -- Sep 2023) {</p>
-        <ul>
-          <li>Reproduced and fixed software bugs to improve reliability.</li>
-          <li>Optimized backend code, reducing server response time by 15%.</li>
-        </ul>
-        <p>}</p>
-      </div>
-
-      <div class="job">
-        <p><strong>Associate Monitor at University of Porto</strong> (Jun 2024 -- Jul 2024) {</p>
-        <ul>
-          <li>Delivered 3D modeling workshops to 25+ students using SketchUp.</li>
-        </ul>
-        <p>}</p>
-      </div>
-    }
-    </section>
-
-    <!-- <section>
-      <h2>Projects {</h2>
-      <ul>
-        <li><strong>Filtering Algorithm Recommender System</strong> — Python, NumPy;</li>
-        <li><strong>Socket Calculator Client-Server</strong> — Java (multithreaded architecture);</li>
-        <li><strong>Evasive PDF Malware Classifier</strong> — Python, scikit-learn, pandas;</li>
-      </ul>
-      <p>}</p>
-    </section> -->
-
-    <section>
-      <h2>Skills {</h2>
-      <ul>
-        <li><strong>Languages:</strong> Bash, C, C++, C#, Java, Python;</li>
-        <li><strong>Web Development:</strong> .NET, HTML/CSS, JavaScript, React;</li>
-        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB;</li>
-        <li><strong>DevOps & CI/CD:</strong> Git, Docker, Bitbucket, CI/CD, VirtualBox;</li>
-        <li><strong>Security & Network Tools:</strong> Wireshark, ARX, Fortify, John the Ripper, Tor;</li>
-        <li><strong>Tools:</strong> Visual Studio, VS Code, IntelliJ IDEA, Postman, Figma;</li>
-        <li><strong>Productivity:</strong> Microsoft Office, Google Workspace;</li>
-        <li><strong>Operating Systems:</strong> Linux (Arch, Debian, Ubuntu), Windows;</li>
-      </ul>
-      <p>}</p>
-    </section>
-
-    <section>
-      <h2>Additional Information {</h2>
-      <ul>
-        <li><strong>Languages:</strong> Portuguese (Native), English (Fluent), French (Intermediate);</li>
-        <li><strong>Driving License:</strong> Category B (Car);</li>
-        <li><strong>Active Memberships:</strong> L’etoile Noire Club, OWASP Porto;</li>
-        <li><strong>Hobbies:</strong> Photography, Game Development, Sports;</li>
-      </ul>
-      <p>}</p>
-    </section>
-
-    <h1>}</h1>
-  </div>
+        // Add scroll animation for sections
+        const sections = document.querySelectorAll('.section');
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
