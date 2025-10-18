@@ -9,88 +9,89 @@
 </head>
 <body>
     <div class="floating-elements" id="floatingElements"></div>
-    
+
     <div class="container">
-        <header>
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="./sissi.png" alt="Clarisse Carvalho">
+        <div class="main-content">
+            <header>
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="./sissi.png" alt="Clarisse Carvalho">
+                    </div>
+                    <h1>Clarisse Carvalho</h1>
                 </div>
-                <h1>Clarisse Carvalho</h1>
-                <!-- <p class="tagline">Cybersecurity Specialist • Game Developer • Educator • Photographer</p> -->
-            </div>
-            
-            <div class="social-links">
-                <a href="https://github.com/SissiMaria01" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/clarissemaria" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-steam"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fas fa-gamepad"></i>
-                </a>
-                <a href="#" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </header>
-        
-        <div class="sections">
-            <div class="section security">
-                <div>
-                    <div class="section-icon">🔐</div>
-                    <h2>Security</h2>
-                    <p>I love exploring how systems work and finding ways to keep them safe.</p>
+
+                <div class="social-links">
+                    <a href="https://github.com/SissiMaria01" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/clarissemaria" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-steam"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-gamepad"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
-                <button class="section-btn" onclick="location.href='security/index.html'">Explore My Work</button>
-            </div>
-            
-            <div class="section games">
-                <div>
-                    <div class="section-icon">🎮</div>
-                    <h2>Games</h2>
-                    <p>I enjoy creating games that tell stories and bring ideas to life.</p>
+            </header>
+
+            <div class="sections">
+                <div class="section security">
+                    <div>
+                        <div class="section-icon">🔐</div>
+                        <h2>Security</h2>
+                        <p>I love exploring how systems work and finding ways to keep them safe.</p>
+                    </div>
+                    <button class="section-btn" onclick="location.href='security/index.html'">Explore My Work</button>
                 </div>
-                <button class="section-btn" onclick="location.href='game/index.html'">See My Games</button>
-            </div>
-            
-            <div class="section teaching">
-                <div>
-                    <div class="section-icon">👩‍🏫</div>
-                    <h2>Teaching</h2>
-                    <p>Sharing knowledge and helping others learn inspires me every day.</p>
+
+                <div class="section games">
+                    <div>
+                        <div class="section-icon">🎮</div>
+                        <h2>Games</h2>
+                        <p>I enjoy creating games that tell stories and bring ideas to life.</p>
+                    </div>
+                    <button class="section-btn" onclick="location.href='game/index.html'">See My Games</button>
                 </div>
-                <button class="section-btn" onclick="location.href='teaching/index.html'">Learn More</button>
-            </div>
-            
-            <div class="section photography">
-                <div>
-                    <div class="section-icon">📸</div>
-                    <h2>Photography</h2>
-                    <p>I capture moments that show the beauty of life and nature.</p>
+
+                <div class="section teaching">
+                    <div>
+                        <div class="section-icon">👩‍🏫</div>
+                        <h2>Teaching</h2>
+                        <p>Sharing knowledge and helping others learn inspires me every day.</p>
+                    </div>
+                    <button class="section-btn" onclick="location.href='teaching/index.html'">Learn More</button>
                 </div>
-                <button class="section-btn" onclick="location.href='photography/index.html'">View Gallery</button>
+
+                <div class="section photography">
+                    <div>
+                        <div class="section-icon">📸</div>
+                        <h2>Photography</h2>
+                        <p>I capture moments that show the beauty of life and nature.</p>
+                    </div>
+                    <button class="section-btn" onclick="location.href='photography/index.html'">View Gallery</button>
+                </div>
             </div>
         </div>
-        
+
         <footer>
-            <p>&copy; 2023 Clarisse Carvalho. All rights reserved.</p>
+            <p>&copy; 2025 Clarisse Carvalho. All rights reserved.</p>
         </footer>
     </div>
 
     <script>
-        // Create floating elements
+        // Floating elements
         const floatingContainer = document.getElementById('floatingElements');
         const colors = ['rgba(108, 99, 255, 0.1)', 'rgba(255, 101, 132, 0.1)', 'rgba(86, 171, 47, 0.1)', 'rgba(142, 68, 173, 0.1)'];
-        
+
         for (let i = 0; i < 15; i++) {
             const element = document.createElement('div');
             element.classList.add('floating-element');
-            
+
             const size = Math.random() * 100 + 50;
             element.style.width = `${size}px`;
             element.style.height = `${size}px`;
@@ -99,18 +100,13 @@
             element.style.left = `${Math.random() * 100}%`;
             element.style.animationDuration = `${Math.random() * 20 + 10}s`;
             element.style.animationDelay = `${Math.random() * 5}s`;
-            
+
             floatingContainer.appendChild(element);
         }
 
-        // Add scroll animation for sections
+        // Scroll animation
         const sections = document.querySelectorAll('.section');
-        
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -119,7 +115,7 @@
                 }
             });
         }, observerOptions);
-        
+
         sections.forEach(section => {
             section.style.opacity = '0';
             section.style.transform = 'translateY(20px)';
