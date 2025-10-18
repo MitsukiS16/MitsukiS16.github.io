@@ -1,262 +1,587 @@
 :root {
     --primary: #6c63ff;
     --secondary: #ff6584;
-    --dark: #1a1a2e;
-    --light: #f8f9fa;
+    --middle: #b564ff;
+    --dark: #333333;
+    --main-bg: #060606;
+    --box-bg: #1F1F1F;
     --gray: #6c757d;
-    --transition: all 0.3s ease;
+    --light: #f8f9fa;
+
+    /* Responsive font sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-color: var(--main-bg);
     color: var(--light);
     line-height: 1.6;
-    overflow-x: hidden;
-    flex: 1;
+    font-size: var(--fs-base);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
-header {
-    padding: 20px 0 10px;
-    text-align: center;
-    overflow: hidden;
-}
-
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(108, 99, 255, 0.1) 0%, transparent 70%);
-    z-index: -1;
-}
-
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.profile-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    display: flex;
+button {
+    min-height: 2.5rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: 600;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    font-size: var(--fs-base);
+    width: auto;
+    min-width: 120px;
 }
 
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0;
+h2 span {
     background: linear-gradient(to right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+p {
+    font-size: var(--fs-base);
+    line-height: 1.6;
 }
 
-.social-link {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+/* Container */
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+/* .title-header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.title-header h1 {
+    font-size: var(--fs-5xl);
     color: var(--light);
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.social-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(108, 99, 255, 0.3);
-}
-
-/* Sections */
-.sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.section {
-    flex: 1 1 250px;
-    max-width: 350px;
-    border-radius: 15px;
-    padding: 25px 20px;
+    white-space: nowrap;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+    z-index: 1;
+    padding: 0 1rem;
+}
+
+.title-header .line {
+    flex-grow: 1;
+    height: 3px;
+    min-width: 20px;
+}
+
+.title-header .line1 {
+    background: linear-gradient(to right, var(--primary), var(--middle));
+}
+
+.title-header .line2 {
+    background: linear-gradient(to right, var(--middle), var(--secondary));
+} */
+
+/* Bento Grid Layout - UPDATED for equal height columns */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: start;
+    /* Changed from stretch to start for better control */
+}
+
+/* Left Column & Right Column - UPDATED for equal heights */
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    /* Ensure columns take full height */
+}
+
+/* Box Styles - standard padding 20px */
+.box {
+    background-color: var(--box-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(63, 63, 63, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(143, 143, 143, 0.4);
+}
+
+/* Profile Intro Box - UPDATED for better height distribution */
+.profile-intro {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    /* Set minimum height */
+}
+
+.profile-intro img {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+    display: block;
+}
+
+.profile-intro h2 {
+    font-size: var(--fs-3xl);
+    margin-bottom: 0.5rem;
+}
+
+.profile-intro h2 span {
+    display: inline-block;
+}
+
+.profile-intro p {
+    color: var(--light);
+    font-style: italic;
+}
+
+.profile-intro .pronouns {
+    font-size: var(--fs-sm);
+    color: var(--gray) !important;
+    font-weight: 400;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+/* Profile Details Box - UPDATED for better height distribution */
+.profile-details {
+    flex-grow: 1;
+    /* Allow this box to grow and fill remaining space */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 250px;
-    transition: all 0.3s ease;
+    /* Distribute content evenly */
 }
 
-.section-icon {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.profile-details h2 {
+    display: inline-block;
+    font-size: var(--fs-3xl);
 }
 
-.section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+.h2next {
+    margin-top: 1rem;
 }
 
-.section p {
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.95rem;
+.profile-details-box {
+    margin-bottom: 0.5rem;
 }
 
-.section-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.1);
+.profile-details-box p {
     color: var(--light);
+}
+
+.profile-details-box p span {
     font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
 }
 
-.section-btn:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+.profile-details-box .sub-item {
+    margin-left: 1rem;
+    font-size: var(--fs-sm);
 }
 
-/* Individual Section Styles + Hover */
-.security {
-    background: linear-gradient(120deg, #2e2a7a 0%, #4a47b2 100%);
-    box-shadow: 0 5px 25px rgba(36, 33, 120, 0.35);
-    transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.security:hover {
-    background: linear-gradient(135deg, #2e2a7a 0%, #4a47b2 100%);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(36, 33, 120, 0.45);
-}
-
-.games {
-    background: linear-gradient(150deg, #502e95 0%, #7b4ac2 100%);
-    box-shadow: 0 5px 25px rgba(63, 30, 148, 0.35);
-}
-.games:hover {
-    background: linear-gradient(165deg, #502e95 0%, #7b4ac2 100%);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(63, 30, 148, 0.45);
-}
-
-.teaching {
-    background: linear-gradient(135deg, #6a2a60 0%, #9c3d8b 100%);
-    box-shadow: 0 5px 25px rgba(58, 22, 52, 0.35);
-}
-.teaching:hover {
-    background: linear-gradient(150deg, #6a2a60 0%, #9c3d8b 100%);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(58, 22, 52, 0.45);
-}
-
-.photography {
-    background: linear-gradient(110deg, #7a2a42 0%, #b23f5f 100%);
-    box-shadow: 0 5px 25px rgba(58, 22, 38, 0.35);
-}
-.photography:hover {
-    background: linear-gradient(125deg, #7a2a42 0%, #b23f5f 100%);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(58, 22, 38, 0.45);
-}
-
-/* Footer */
-footer {
+/* Featured Work - UPDATED for better height distribution */
+.featured-work {
     text-align: center;
-    padding: 15px 0;
-    color: var(--gray);
-    font-size: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Floating Elements */
-.floating-elements {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
+    flex-grow: 1;
+    /* Allow this box to grow and fill space */
+    display: flex;
+    flex-direction: column;
 }
 
-.floating-element {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(108, 99, 255, 0.1);
-    animation: float 15s infinite linear;
+.featured-work h2 {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: var(--fs-3xl);
 }
 
-@keyframes float {
-    0% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-    100% { transform: translateY(0) rotate(360deg); }
+/* 2x2 grid for hobbies - UPDATED for better height distribution */
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    flex-grow: 1;
+    /* Allow hobbies grid to grow and fill space */
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .section { min-height: 220px; }
-    h1 { font-size: 2rem; }
+/* Hobby box - UPDATED for consistent heights */
+.hobby {
+    background-color: var(--dark);
+    border-radius: 12px;
+    text-align: center;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    min-height: 200px;
+    gap: 0.75rem;
+    /* Consistent spacing between elements */
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hobby img {
+    width: 50%;
+    max-width: 80px;
+    aspect-ratio: 1 / 1;
+    vertical-align: middle;
+    filter: invert(1) sepia(0) saturate(0) brightness(1.05);
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.hobby h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-2xl);
+    margin: 0;
+    /* Remove default margins */
+}
+
+.hobby p {
+    margin: 0;
+    /* Remove default margins */
+    font-style: italic;
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    flex-grow: 0;
+    /* Don't allow paragraph to grow */
+}
+
+
+.hobby a {
+    margin-top: 0.5rem;
+    /* Add space above button */
+}
+
+
+/* Socials & Resume */
+.contact-resume {
+    border: 2px solid var(--secondary);
+}
+
+.socials-resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials a {
+    font-size: var(--fs-3xl);
+    color: var(--light);
+    transition: color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.socials a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.resume-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+    display: inline-block;
+    min-height: 2.5rem;
+    min-width: 120px;
+    text-align: center;
+    line-height: 1;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller desktops (901px to 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1.5rem;
+    }
+
+    .profile-intro {
+        padding: 1rem;
+        min-height: 280px;
+        /* Adjusted for medium screens */
+    }
+
+    .profile-intro img {
+        width: 60%;
+        max-width: 180px;
+    }
+
+    .profile-intro h2 {
+        font-size: var(--fs-2xl);
+    }
+
+    .box {
+        padding: 1.5rem;
+    }
+
+    .featured-work h2,
+    .profile-details h2 {
+        font-size: var(--fs-2xl);
+    }
+
+    .hobby {
+        min-height: 180px;
+        gap: 0.5rem;
+        padding: 1.25rem;
+    }
+}
+
+/* Tablets (768px to 900px) */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .profile-intro {
+        min-height: auto;
+        /* Reset on single column layout */
+    }
+
+    .profile-intro img {
+        width: 50%;
+        max-width: 160px;
+    }
+
+    .hobbies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .socials-resume {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box {
+        padding: 1.5rem;
+    }
+
+    button, .resume-btn {
+        min-height: 2.75rem;
+        padding: 0.75rem 1.5rem;
+        font-size: var(--fs-base);
+    }
+
+    .profile-intro h2,
+    .featured-work h2,
+    .profile-details h2 {
+        font-size: var(--fs-2xl);
+    }
+
+    .hobby h3 {
+        font-size: var(--fs-lg);
+    }
+
+    .hobby {
+        min-height: auto;
+        gap: 0.5rem;
+        padding: 1.25rem;
+    }
+}
+
+/* Large phones (601px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0.75rem;
+    }
+
+    .bento-grid {
+        gap: 1rem;
+    }
+
+    .left-column, .right-column {
+        gap: 1rem;
+    }
+
+    .box {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .profile-intro {
+        padding: 1rem;
+    }
+
+    .profile-intro img {
+        width: 50%;
+        max-width: 140px;
+    }
+
+    .profile-intro h2 {
+        font-size: var(--fs-2xl);
+    }
+
+    .profile-intro p {
+        font-size: var(--fs-sm);
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .hobby {
+        padding: 1.5rem;
+        gap: 0.75rem;
+    }
+
+    .hobby img {
+        width: 40%;
+        max-width: 70px;
+    }
+
+    .socials-resume {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    button, .resume-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Small phones (up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .box {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .profile-intro {
+        padding: 0.75rem;
+    }
+
+    .profile-intro img {
+        width: 60%;
+        max-width: 120px;
+    }
+
+    .profile-intro h2 {
+        font-size: var(--fs-xl);
+
+    }
+
+    .featured-work h2,
+    .profile-details h2 {
+        font-size: var(--fs-lg);
+    }
+
+    .hobby {
+        padding: 1.25rem;
+        gap: 0.5rem;
+    }
+
+    .hobby h3 {
+        font-size: var(--fs-base);
+    }
+
+    .hobby p {
+        font-size: var(--fs-xs);
+    }
+
+    .socials a {
+        font-size: var(--fs-2xl);
+    }
+
+    button, .resume-btn {
+        min-height: 2.5rem;
+        padding: 0.5rem 1rem;
+        font-size: var(--fs-sm);
+    }
 }
