@@ -1,170 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sissi Maria | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
-        <!-- Font Awesome CDN - Only one needed -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <!-- Title -->
-            <!-- <header class="title-header">
-                <div class="line line1"></div>
-                <h1>Sissi Maria</h1>
-                <div class="line line2"></div>
-            </header> -->
-            <!-- Main Grid Layout -->
-            <main class="bento-grid">
-                <!-- Left Column -->
-                <div class="left-column">
-                    <!-- Profile Intro Box (with photo + intro text) -->
-                    <div class="box profile-intro">
-                        <img src="profile.png" alt="Sissi Maria" class="profile-img">
-                        <h2>
-                            Hello, I'm
-                            <span>Sissi</span>
-                            <span class="pronouns">(She/Her)</span>
-                        </h2>
-                        <p>Friendly, creative, open-minded person, ready for a challenge</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarisse (Sissi) Carvalho | Portfolio</title>
+    <meta name="description" content="Clarisse Carvalho — Software Developer & Researcher at INESC TEC. Based in Porto, Portugal.">
+    <meta property="og:title" content="Clarisse (Sissi) Carvalho | Portfolio">
+    <meta property="og:description" content="Software Developer & Researcher based in Porto, Portugal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="profile.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="bento-style.css">
+</head>
+
+<body>
+    <div class="bento-page">
+        <main class="bento-grid" aria-label="Portfolio">
+
+            <!-- Hero · col 1-4, row 1-4 -->
+            <div class="card card-hero">
+                <img src="profile.png" alt="Clarisse Carvalho" class="avatar" width="130" height="130">
+                <div class="hero-text">
+                    <p class="greeting">👋 Hi, I'm</p>
+                    <h1><em>Sissi Maria</em></h1>
+                    <span class="pronouns-pill">she / her</span>
+                    <p class="hero-role">Software Developer &amp; Researcher · 🇵🇹 Porto</p>
+                    <p class="bio">Friendly, creative, and open-minded - ready for a challenge.</p>
+                    <div class="badges" style="margin-top: 0.75rem;">
+                        <span>Python</span>
+                        <span>Security</span>
+                        <span>ML</span>
+                        <span>Distributed Systems</span>
+                        <span>Healthcare AI</span>
                     </div>
-                    <!-- Profile Details Box -->
-                    <div class="box profile-details">
-                        <h2>
-                            <span>Education</span>
-                        </h2>
-                        <div class="profile-details-box">
-                            <p>
-                                <span>University Paris-Saclay (France)</span>
-                            </p>
-                            <p class="sub-item">1st Year, M.Sc. in Computer Science</p>
+                </div>
+            </div>
+
+            <!-- Projects stat · col 5, row 1 -->
+            <div class="card card-stat">
+                <span class="stat-num">15<sup>+</sup></span>
+                <span class="stat-lbl">Projects</span>
+            </div>
+
+            <!-- Hours programming stat · col 6, row 1 -->
+            <div class="card card-stat-hours">
+                <span class="stat-num">3k<sup>+</sup></span>
+                <span class="stat-lbl">Hours coding</span>
+            </div>
+
+            <!-- CV download · col 7, row 1 -->
+            <a href="CV_Clarisse_Carvalho.pdf" target="_blank" rel="noopener" class="card card-social card-cv">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                <span>Download CV</span>
+            </a>
+
+            <!-- Research · col 5-7, row 2-3 -->
+            <div class="card card-research">
+                <span class="research-tag">🔬 Research</span>
+                <h3><a href="https://brain.inesctec.pt/" target="_blank" rel="noopener" class="research-link">INESC TEC · BRAIN</a></h3>
+                <p>Signal &amp; image processing for neuroengineering. Applying ML to biomedical data.</p>
+            </div>
+
+            <!-- Currently learning · col 5-7, row 4-5 -->
+            <div class="card card-learning">
+                <h3>Currently learning</h3>
+                <div class="learn-cols">
+                    <ul class="learn-list">
+                        <li>Signal &amp; Image Processing</li>
+                        <li>Brain MRI Imaging</li>
+                        <li>Advanced Network Security</li>
+                    </ul>
+                    <ul class="learn-list">
+                        <li>Kubernetes &amp; Blockchain</li>
+                        <li>AI for Healthcare</li>
+                        <li>LLM Limitations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- About · col 1-2, row 5-6 -->
+            <a href="bento-about.html" class="card card-about nav-card">
+                <div>
+                    <span class="card-tag">About me</span>
+                    <h2>Who am I?</h2>
+                    <p>Education, research, background &amp; what drives me.</p>
+                </div>
+                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
+            </a>
+
+            <!-- Projects · col 3-4, row 5-6 -->
+            <a href="bento-projects.html" class="card card-projects nav-card">
+                <div>
+                    <span class="card-tag">Work</span>
+                    <h2>Projects</h2>
+                    <p>RingNet, Public Ledger, Code &amp; Grow &amp; more.</p>
+                </div>
+                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
+            </a>
+
+            <!-- Beyond keyboard · col 5-7, row 6-7 -->
+            <div class="card card-hobbies">
+                <h3>Beyond the keyboard</h3>
+                <div class="hobby-tiles">
+                    <div class="hobby-tile">
+                        <span class="hobby-icon">🥋</span>
+                        <span class="hobby-label">Judo</span>
+                    </div>
+                    <div class="hobby-tile">
+                        <span class="hobby-icon">📷</span>
+                        <span class="hobby-label">Photography</span>
+                    </div>
+                    <div class="hobby-tile">
+                        <span class="hobby-icon">📚</span>
+                        <span class="hobby-label">Reading</span>
+                    </div>
+                    <div class="hobby-tile">
+                        <span class="hobby-icon">🎮</span>
+                        <span class="hobby-label">Gaming</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages & Skills · col 1-4, row 7-8 -->
+            <div class="card card-languages">
+                <h3>Tech Stack</h3>
+                <div class="languages-row">
+                    <div class="skill-group">
+                        <div class="skill-tags">
+                            <a href="https://www.python.org" target="_blank" rel="noopener">Python</a>
+                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener">C#</a>
+                            <a href="https://en.cppreference.com/w/c" target="_blank" rel="noopener">C/C++</a>
+                            <a href="https://www.java.com" target="_blank" rel="noopener">Java</a>
+                            <a href="https://www.typescriptlang.org" target="_blank" rel="noopener">TypeScript</a>
+                            <a href="https://kotlinlang.org" target="_blank" rel="noopener">Kotlin</a>
                         </div>
-                        <div class="profile-details-box">
-                            <p>
-                                <span>University of Porto (Portugal)</span>
-                            </p>
-                            <p class="sub-item">4th Year, B.Sc. & M.Sc. in Computer Science</p>
-                        </div>
-                        <h2 class="h2next">
-                            <span>Skills & Expertise</span>
-                        </h2>
-                        <div class="profile-details-box">
-                            <p>
-                                <span>Programming Languages</span>
-                            </p>
-                            <p class="sub-item">Java, C#, Python</p>
-                        </div>
-                        <!-- <div class="profile-details-box">
-                            <p>
-                                <span>Development & Design Tools</span>
-                            </p>
-                            <p class="sub-item">Visual Studio, Blender, Figma</p>
-                        </div> -->
-                        <div class="profile-details-box">
-                            <p>
-                                <span>Office & Productivity Tools</span>
-                            </p>
-                            <p class="sub-item">Microsoft Office, Overleaf</p>
-                        </div>
-                        <h2 class="h2next">
-                            <span>Other Information</span>
-                        </h2>
-                        <!-- <div class="profile-details-box">
-                            <p>
-                                <span>Residence</span>
-                            </p>
-                            <p class="sub-item">Paris, France: Sep 2025 – Present</p>
-                            <p class="sub-item">Porto, Portugal: May 2001 – Aug 2025</p>
-                            <p class="sub-item">Luxembourg: Jun 2022 – Sep 2022</p>
-                        </div> -->
-                        <div class="profile-details-box">
-                            <p>
-                                <span>Languages</span>
-                            </p>
-                            <p class="sub-item">Portuguese (Native), English (Fluent)</p>
-                            <p class="sub-item">French (Intermediate), Japanese (Beginner)</p>
-                            <!-- <p class="sub-item">Spanish (Beginner), </p> -->
-                        </div>
-                        <div class="profile-details-box">
-                            <p>
-                                <span>Driving License</span>
-                            </p>
-                            <p class="sub-item">Category B/B1</p>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-tags">
+                            <a href="https://dotnet.microsoft.com" target="_blank" rel="noopener">.NET</a>
+                            <a href="https://www.postgresql.org" target="_blank" rel="noopener">PostgreSQL</a>
+                            <a href="https://www.mongodb.com" target="_blank" rel="noopener">MongoDB</a>
+                            <a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a>
+                            <a href="https://react.dev" target="_blank" rel="noopener">React</a>
+                            <a href="https://developer.android.com" target="_blank" rel="noopener">Android</a>
                         </div>
                     </div>
                 </div>
-                <!-- Right Column -->
-                <div class="right-column">
-                    <!-- Featured Work / Hobbies -->
-                    <div class="box featured-work">
-                        <h2>
-                            <span>About me</span>
-                        </h2>
-                        <div class="hobbies">
-                            <div class="hobby">
-                                <img src="images/engineer.png" alt="Engineer Icon">
-                                <h3>Software Engineer</h3>
-                                <p>Making network systems secure and efficient</p>
-                                <a href="https://github.com/MitsukiS16" target="_blank" rel="noopener noreferrer">
-                                    <button>See more</button>
-                                </a>
-                            </div>
-                            <div class="hobby">
-                                <img src="images/designer.png" alt="Designer Icon">
-                                <h3>Game Designer</h3>
-                                <p>Creating assets and prompts in my free time.</p>
-                                <a href="https://github.com/MitsukiS16" target="_blank" rel="noopener noreferrer">
-                                    <button>See more</button>
-                                </a>
-                            </div>
-                            <div class="hobby">
-                                <img src="images/teacher.png" alt="Teacher Icon">
-                                <h3>Teacher</h3>
-                                <p>Teaching high school kids for free as a side job.</p>
-                                <!-- <a href="https://www.instagram.com/sissimaria01/" target="_blank" rel="noopener noreferrer">
-                                    <button>See more</button>
-                                </a> -->
-                            </div>
-                            <div class="hobby">
-                                <img src="images/photographer.png" alt="Photographer Icon">
-                                <h3>Photographer</h3>
-                                <p>Capturing daily life and nature around the world.</p>
-                                <!-- <a href="https://www.instagram.com/sissimaria01/" target="_blank" rel="noopener noreferrer">
-                                    <button>See more</button>
-                                </a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Social Media & Resume -->
-                    <div class="box contact-resume">
-                        <div class="socials-resume">
-                            <div class="socials">
-                                <a href="mailto:clarisssemtcarvalho@gmail.com">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/sissimaria01" target="_blank" rel="noopener">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/MitsukiS16" target="_blank" rel="noopener">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com/sissimaria01/" target="_blank" rel="noopener">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                            <a href="Resume.pdf" target="_blank" rel="resume-btn">
-                                <button>Resume ↗</button>
-                            </a>
-                        </div>
+            </div>
+
+            <!-- Contact · col 5-7, row 8 -->
+            <div class="card card-contact">
+                <div class="contact-top">
+                    <h2>Let's work together</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/MitsukiS16" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sissimaria01" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/sissimaria01" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
-            </main>
-        </div>
-    </body>
+                <a href="bento-contact.html" class="contact-cta" aria-label="Full contact page">
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </main>
+    </div>
+</body>
+
 </html>
