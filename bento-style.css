@@ -794,6 +794,42 @@ body {
     border-radius: 0.5rem;
 }
 
+/* Site card grid (Favourite Websites page) */
+.site-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.site-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0.9rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: background 0.12s, border-color 0.12s;
+}
+
+.site-card:hover {
+    background: var(--card-hover);
+    border-color: rgba(255,255,255,0.18);
+}
+
+.site-card-name {
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.site-card-url {
+    font-size: 0.73rem;
+    color: var(--dim);
+}
+
 /* Favourite Websites page */
 .fav-list {
     display: flex;
