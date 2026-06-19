@@ -1240,11 +1240,12 @@ a.card {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
-    transition: border-color 0.15s;
+    transition: border-color 0.2s, background 0.2s;
 }
 
 .hobby-card:hover {
-    border-color: rgba(139, 92, 246, 0.35);
+    border-color: rgba(139, 92, 246, 0.4);
+    background: rgba(139, 92, 246, 0.04);
 }
 
 .hobby-card-img {
@@ -1305,7 +1306,8 @@ a.card {
 }
 
 .contact-link:hover {
-    background: var(--card-hover);
+    background: rgba(139, 92, 246, 0.05);
+    border-color: rgba(139, 92, 246, 0.3);
     transform: translateX(4px);
 }
 
@@ -1415,6 +1417,24 @@ a.card {
 
     .subpage h1 {
         font-size: 1.7rem;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .project-filters {
+        width: 100%;
+    }
+
+    .design-grid {
+        columns: 1;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
