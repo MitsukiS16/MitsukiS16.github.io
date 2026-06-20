@@ -9,7 +9,8 @@
     <meta property="og:title" content="Clarisse (Sissi) Carvalho | Portfolio">
     <meta property="og:description" content="Software Developer & Researcher based in Porto, Portugal.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="profile.png">
+    <meta property="og:url" content="https://mitsukis16.github.io/">
+    <meta property="og:image" content="https://mitsukis16.github.io/profile.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -30,7 +31,7 @@
                     <span class="pronouns-pill">she / her</span>
                     <p class="hero-role">Software Developer &amp; Researcher · 🇵🇹 Porto</p>
                     <p class="bio">Friendly, creative, and open-minded - ready for a challenge.</p>
-                    <div class="badges" style="margin-top: 0.75rem;">
+                    <div class="badges">
                         <span>Python</span>
                         <span>Security</span>
                         <span>ML</span>
@@ -186,11 +187,18 @@
             }, 16);
         }
 
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                countUp(el, +el.dataset.target, 1200);
+                observer.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+
         window.addEventListener('load', () => {
-            document.querySelectorAll('.count-up').forEach(el =>
-                countUp(el, +el.dataset.target, 1200));
-            document.querySelectorAll('.count-up-k').forEach(el =>
-                countUp(el, +el.dataset.target, 1200));
+            document.querySelectorAll('.count-up, .count-up-k').forEach(el =>
+                observer.observe(el));
         });
     </script>
 </body>

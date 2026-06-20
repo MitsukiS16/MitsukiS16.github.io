@@ -150,12 +150,9 @@ html {
     border-radius: var(--radius);
     padding: 1.6rem;
     overflow: hidden;
-    transition: border-color 0.15s, background 0.15s;
+    transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
 }
 
-a.card {
-    cursor: pointer;
-}
 
 .card:hover {
     border-color: rgba(139, 92, 246, 0.3);
@@ -168,7 +165,6 @@ a.card {
     align-items: center;
     gap: 1.75rem;
     position: relative;
-    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .card-hero:hover {
@@ -259,6 +255,7 @@ a.card {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
+    margin-top: 0.75rem;
 }
 
 .badges span {
@@ -326,8 +323,9 @@ a.card {
     font-weight: 500;
 }
 
-/* --- Stat card --- */
-.card-stat {
+/* --- Stat cards --- */
+.card-stat,
+.card-stat-hours {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,17 +352,6 @@ a.card {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-}
-
-/* hours stat shares exact same style as .card-stat */
-.card-stat-hours {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0.2rem;
-    padding: 0.55rem;
 }
 
 /* --- Learning card --- */
@@ -404,7 +391,6 @@ a.card {
 }
 
 .nav-card:hover {
-    background: var(--card-hover);
     transform: translateY(-3px);
     box-shadow: 0 14px 48px rgba(0, 0, 0, 0.5);
 }
@@ -439,8 +425,16 @@ a.card {
     background: linear-gradient(145deg, var(--card) 50%, rgba(139, 92, 246, 0.1));
 }
 
+.card-about:hover {
+    background: linear-gradient(145deg, var(--card-hover) 50%, rgba(139, 92, 246, 0.15));
+}
+
 .card-projects {
     background: linear-gradient(145deg, var(--card) 50%, rgba(59, 130, 246, 0.1));
+}
+
+.card-projects:hover {
+    background: linear-gradient(145deg, var(--card-hover) 50%, rgba(59, 130, 246, 0.15));
 }
 
 /* --- Contact card (div, not <a>, so social links inside are valid) --- */
@@ -1438,6 +1432,11 @@ a.card {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+    .hero-text h1 em { animation: none; }
+}
+
 @media (max-width: 380px) {
     .bento-grid {
         grid-template-columns: 1fr;
@@ -1453,7 +1452,7 @@ a.card {
 }
 
 /* Short viewport: prevents cell overflow on short/wide screens (laptops, landscape phones) */
-@media (max-height: 1050px) and (min-width: 1025px) {
+@media (max-height: 1050px) and (min-width: 768px) {
     .bento-page {
         height: auto;
         min-height: 100svh;
