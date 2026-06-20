@@ -1332,11 +1332,13 @@ body {
 }
 
 .contact-link-text .label {
+    display: block;
     font-weight: 600;
     font-size: 0.93rem;
 }
 
 .contact-link-text .value {
+    display: block;
     font-size: 0.8rem;
     color: var(--muted);
 }
