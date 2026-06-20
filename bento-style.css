@@ -753,6 +753,7 @@ html {
     letter-spacing: 0.08em;
     color: var(--dim);
     margin: 2.2rem 0 0.85rem;
+    line-height: 1;
 }
 
 /* Info blocks (About page) */
