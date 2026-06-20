@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <div class="subpage">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="subpage" id="main">
 
         <a href="index.html" class="back-link">
             <i class="fas fa-arrow-left" aria-hidden="true"></i> Back
@@ -41,6 +42,7 @@
                 <button class="filter-btn" data-filter="Frontend">Frontend</button>
                 <button class="filter-btn" data-filter="Backend">Backend</button>
                 <button class="filter-btn" data-filter="Design">Design</button>
+                <button class="filter-btn" data-filter="Research">Research</button>
             </div>
         </div>
 
@@ -84,7 +86,7 @@
                     </div>
                 </div>
                 <div class="project-chips">
-                    <span>Fullstack</span>
+                    <span>Research</span>
                     <span>Python</span>
                 </div>
             </a>
@@ -205,10 +207,7 @@
                 const filter = btn.dataset.filter;
                 cards.forEach(card => {
                     const tags = [...card.querySelectorAll('.project-chips span')].map(s => s.textContent);
-                    const isFullstack = tags.includes('Fullstack');
-                    const match = filter === 'all'
-                        || tags.includes(filter)
-                        || (isFullstack && (filter === 'Frontend' || filter === 'Backend'));
+                    const match = filter === 'all' || tags.includes(filter);
                     card.style.display = match ? '' : 'none';
                 });
             });
