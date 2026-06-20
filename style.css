@@ -9,6 +9,8 @@
 html {
     /* grows from 14px on phones to 18px on wide monitors */
     font-size: clamp(14px, 7px + 0.7vw, 18px);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.4) var(--bg);
 }
 
 :root {
@@ -52,12 +54,6 @@ body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.5;
     animation: page-fade-in 0.4s ease both;
-}
-
-/* Firefox */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(139, 92, 246, 0.4) var(--bg);
 }
 
 /* Chrome/Safari */
@@ -803,6 +799,7 @@ html {
     font-weight: 600;
     font-size: 0.93rem;
     margin-bottom: 0.15rem;
+    line-height: inherit;
 }
 
 .info-block .ib-sub {

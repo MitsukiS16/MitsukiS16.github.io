@@ -180,7 +180,10 @@
         </main>
     </div>
     <script>
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
         function countUp(el, target, duration) {
+            if (reducedMotion) { el.textContent = target; return; }
             let start = 0;
             const step = target / (duration / 16);
             const timer = setInterval(() => {
